@@ -1,0 +1,92 @@
+.bannerContainer{
+    display: flex;
+    height: 650px;
+}
+.bannerGray{
+    width: 90%;
+    background: var(--color-neutral-gray);
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px; */
+}
+.logo{
+    /* position: absolute; */
+    margin-left: 172px;
+    margin-top: 72px;
+    height: 100px;
+}
+.bannerIntroduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    height: 300px;
+}
+
+.greet{
+/* height: 58px; */
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 30px;
+display: flex;
+text-align: center;
+}
+.name{
+font-family: Raleway;
+font-style: normal;
+text-transform: capitalize;
+font-weight: bold;
+font-size: 50px;
+}
+.stack{
+font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+color: #919191;
+}
+
+.socialLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bannerBlack{
+    width: 100%;
+    background: var(--color-black);
+    color: var(--color-white);
+    -webkit-clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    margin-left: -125px;
+    padding-right: 30px;
+}
+.bannerNav{
+    display: flex;
+    justify-content: flex-end;
+}
+.bannerNav li{
+    list-style: none;
+    margin: 0 10px;
+    margin-top: 72px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.bannerNavLink{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--color-white);
+}
+.bannerNavLink:hover{
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 9999px;
+    transition: 0.5s ease;
+}
+
+.bannerIntroduction{
+    display: flex;
+    flex-direction: column;
+    
+}

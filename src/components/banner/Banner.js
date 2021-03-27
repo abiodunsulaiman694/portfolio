@@ -3,7 +3,7 @@ import styles from './styles/Banner.module.css'
 import { NavLinks } from '../shared/NavLinks'
 import { Link } from 'react-router-dom'
 import {Profile} from '../../datas/Profile'
-import promzzy from '../../resources/promzzy1.png'
+import promzzy from '../../resources/promzzy2.png'
 
 
 export default function Banner(){

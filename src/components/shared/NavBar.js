@@ -24,18 +24,18 @@ useEffect(() => {
 
     return(
         <>
-        
+        <div className={styles.navBg}>
         <div className={styles.navBar}>
 
             <div className={styles.logo}>
                 LOGO
             </div>
+
                 <div className={styles.menuToggle} onClick={toggled}>
                  {
                    toggle ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />
                 }
                 </div>
-                
             <ul  className={ toggle ? `${styles.navMenu} ${styles.active}` : `${styles.navMenu}`} >
                 {
                     navLinks.map(navLink => (
@@ -47,6 +47,8 @@ useEffect(() => {
                     ))
                 }
             </ul>
+
+        </div>
         </div>
         </>
     )

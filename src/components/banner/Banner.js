@@ -3,6 +3,7 @@ import styles from './styles/Banner.module.css'
 import { NavLinks } from '../shared/NavLinks'
 import { Link } from 'react-router-dom'
 import {Profile} from '../../datas/Profile'
+import promzzy from '../../resources/promzzy1.png'
 
 
 export default function Banner(){
@@ -16,7 +17,10 @@ export default function Banner(){
     [])
     return(
         <>
+        <div className={styles.banner}>
         <div className={styles.bannerContainer}>
+
+            <div className={styles.bgGray}>
             <div className={styles.bannerGray}>
 
 
@@ -38,6 +42,8 @@ export default function Banner(){
                     <span>git</span>
                 </div>
             </div>
+            </div>
+            <div className={styles.bgBlack}>
             <div className={styles.bannerBlack}>
                 <ul className={styles.bannerNav}>
                     {
@@ -50,7 +56,11 @@ export default function Banner(){
                         ))
                     }
                 </ul>
+
+                <img src={promzzy} alt="promzzy" className={styles.bannerImage} />
             </div>
+            </div>
+        </div>
         </div>
         </>
     )

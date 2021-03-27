@@ -13,5 +13,6 @@ body {
     --color-neutral-gray-light: #cacccf;
     --color-neutral-black: #25282b;
     --color-black: #000000;
+    --color-transpirent-black: rgba(0, 0, 0, 0.837);
   }
   

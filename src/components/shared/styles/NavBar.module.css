@@ -14,7 +14,7 @@
 }
 
 .navBar{
-    /* display: none; */
+    display: none;
 }
 
 .logo{
@@ -59,7 +59,7 @@
         width: 90%;
         font-size: 20px;
         position: absolute;
-        background: var(--color-black);
+        background: var(--color-transpirent-black);
         left: -100%;
         opacity: 1;
         transition: 0.4s ease;

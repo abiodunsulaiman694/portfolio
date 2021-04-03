@@ -1,0 +1,29 @@
+.container{
+    padding-top: 100px;
+}
+.gridBody{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+}
+.header{
+    text-transform: uppercase;
+}
+.skillsCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+}
+.skillTitle{
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: capitalize;
+}

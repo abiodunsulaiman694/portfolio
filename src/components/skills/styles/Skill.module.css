@@ -1,0 +1,25 @@
+.skillBg{
+    background: linear-gradient(rgba(191, 187, 187, 0.672), rgba(196, 196, 196, 0.426),rgba(187, 182, 182, 0.823));
+    width: 100%;
+    min-height: 600px;
+}
+.skillContainer{
+    padding: 50px 250px;
+}
+.skillHeader{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+
+@media  (max-width: 970px) {
+    .skillContainer{
+        padding: 40px 40px;
+    }
+}

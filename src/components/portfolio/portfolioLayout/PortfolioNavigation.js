@@ -9,7 +9,7 @@ export default function PortfolioNavigation(){
 
     const {setProjects} = useContext(PortfolioContext)
 
-    const allProjects = Portfolio || [];
+    const allProjects = Portfolio;
     const personalProjcet = allProjects.filter(personal => (personal.type === "personal"))
     const otherProjcet = allProjects.filter(others => (others.type === "others"))
 
@@ -19,7 +19,7 @@ console.log(showActive)
 const onchange = useCallback(() => {
     showActive === "PERSONAL" ? (setProjects(personalProjcet)) : 
     showActive === "OTHERS" ? (setProjects(otherProjcet)) : (setProjects(allProjects))
-        }, [showActive, setProjects, personalProjcet, otherProjcet]);
+        }, [showActive, setProjects, personalProjcet, otherProjcet, allProjects]);
 
 
     useEffect(() => {

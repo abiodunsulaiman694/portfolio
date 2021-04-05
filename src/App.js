@@ -6,6 +6,8 @@ import BannerRoute from './routes/BannerRoute'
 import ShortNotes from './routes/ShortNotes'
 import AboutMe from './routes/AboutMe'
 import Skills from './routes/Skills'
+import MyPortfolio from './routes/MyPortfolio'
+import ContactMe from './routes/ContactMe'
 function App() {
   return (
     <Router>
@@ -25,6 +27,14 @@ function App() {
 
       <Route>
         <Skills />
+      </Route>
+
+      <Route>
+        <MyPortfolio />
+      </Route>
+
+      <Route>
+        <ContactMe />
       </Route>
 
     </PageLayout>

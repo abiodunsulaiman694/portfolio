@@ -1,0 +1,6 @@
+.footerBg{
+    background: var(--color-black);
+    color: var(--color-neutral-gray-light);
+    height: 200px;
+    width: 100%;
+}

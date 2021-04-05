@@ -1,0 +1,11 @@
+.footerBg{
+    background: var(--color-black);
+    min-height: 70px;
+    width: 100%;
+}
+.footerBg h4{
+    margin: 0px;
+    text-align: center;
+    color: var(--color-neutral-gray-light);
+    padding-top: 20px;
+}

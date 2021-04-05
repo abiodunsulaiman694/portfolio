@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    background: var(--color-neutral-gray-dark);
+    justify-content: center;
+}
+.images{
+    height: 250px;
+    width: 300px;
+}
+.projectCard{
+    padding: 15px;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-neutral-gray-light);
+    margin: 5px;
+}
+.images:hover{
+    box-shadow: 5px 5px 4px 4px white;
+}

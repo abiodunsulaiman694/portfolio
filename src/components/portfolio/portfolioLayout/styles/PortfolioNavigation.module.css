@@ -1,0 +1,31 @@
+.navBg{
+    height: 100px;
+    width: 100%;
+    background: var(--color-black);
+    color: var(--color-neutral-gray-light);
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-top: 30px;
+}
+.btnContainer button{
+    height: 50px;
+    padding: 10px;
+    width: 130px;
+    margin: 5px;
+    background-color: var(--color-black);
+    color: var(--color-neutral-gray-dark);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn:hover{
+    background: var(--color-neutral-gray-dark);
+    border-radius: 10px;
+}
+.active{
+    background: white;
+    color: var(--color-black);
+}

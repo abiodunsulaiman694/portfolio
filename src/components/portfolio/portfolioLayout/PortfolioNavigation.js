@@ -8,7 +8,8 @@ export default function PortfolioNavigation(){
     const [showActive, setShowActive] = useState("ALL")
 
     const [projects, setProjects] = useContext(PortfolioContext)
-
+    
+console.log(projects)
 
     useEffect(() => {
         allProjects()

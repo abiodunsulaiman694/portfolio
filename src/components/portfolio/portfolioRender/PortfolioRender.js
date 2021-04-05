@@ -8,6 +8,8 @@ export default function PortfolioRender(){
     
     const [projects, setProjects] = useContext(PortfolioContext)
 
+    setProjects()
+
 console.log(projects)
     return(
             <div className={styles.container}>

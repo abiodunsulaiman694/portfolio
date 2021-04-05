@@ -9,10 +9,10 @@ export default function PortfolioNavigation(){
 
     const [projects, setProjects] = useContext(PortfolioContext)
 
+
     useEffect(() => {
         allProjects()
-    },
-    [])
+    })
 
 
 

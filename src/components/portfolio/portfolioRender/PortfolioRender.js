@@ -6,15 +6,13 @@ import styles from './styles/PortfolioRender.module.css'
 
 export default function PortfolioRender(){
     
-    const [projects, setProjects] = useContext(PortfolioContext)
+    const {projects} = useContext(PortfolioContext)
 
-    setProjects()
 
-console.log(projects)
     return(
             <div className={styles.container}>
                 {
-                    projects.map(project => (
+                   projects && projects.map(project => (
                         <Link className={styles.projectCard}>
                             
                                 <img className={styles.images} src={project.image} alt="images" />

@@ -13,14 +13,14 @@ export default function PortfolioNavigation(){
     useEffect(() => {
 
         onchange()
-
-    })
+    },[])
 
     const allProjects = Portfolio || [];
     const personalProjcet = allProjects.filter(personal => (personal.type === "personal"))
     const otherProjcet = allProjects.filter(others => (others.type === "others"))
 
 
+console.log(showActive)
 
 function onchange(){
     showActive === "PERSONAL" ? (setProjects(personalProjcet)) : 

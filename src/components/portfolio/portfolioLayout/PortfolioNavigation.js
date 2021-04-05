@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useCallback, useContext, useState, useEffect } from 'react'
 import styles from './styles/PortfolioNavigation.module.css'
 import {Portfolio} from '../../../datas/Portfolio'
 import {PortfolioContext} from '../../../context/PortfolioContext'
@@ -13,7 +13,7 @@ export default function PortfolioNavigation(){
     useEffect(() => {
 
         onchange()
-    },[])
+    },[onchange])
 
     const allProjects = Portfolio || [];
     const personalProjcet = allProjects.filter(personal => (personal.type === "personal"))
@@ -22,10 +22,10 @@ export default function PortfolioNavigation(){
 
 console.log(showActive)
 
-function onchange(){
+const onchange = useCallback(() => {
     showActive === "PERSONAL" ? (setProjects(personalProjcet)) : 
     showActive === "OTHERS" ? (setProjects(otherProjcet)) : (setProjects(allProjects))
-        }
+        }, [showActive, setProjects, personalProjcet, otherProjcet, allProjects]);
  
 
     return(

@@ -25,7 +25,7 @@ console.log(showActive)
 const onchange = useCallback(() => {
     showActive === "PERSONAL" ? (setProjects(personalProjcet)) : 
     showActive === "OTHERS" ? (setProjects(otherProjcet)) : (setProjects(allProjects))
-        }, [showActive, setProjects, personalProjcet, otherProjcet, allProjects]);
+        }, [showActive, setProjects, personalProjcet, otherProjcet]);
  
 
     return(
